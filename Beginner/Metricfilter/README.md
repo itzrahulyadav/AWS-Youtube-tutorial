@@ -32,11 +32,15 @@
     }
 
     ```
-3. Create log group [Docs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html#send-cloudtrail-events-to-cloudwatch-logs-console)
-4. [Link](https://repost.aws/knowledge-center/cloudwatch-monitor-cloudtrail-events)
-5. Create metric filters using the following pattern
+2. Create log group [Docs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html#send-cloudtrail-events-to-cloudwatch-logs-console)
+   - Go to the log groups which was created
+   - Enable the metric filters
+3. Create metric filters using the following pattern
 ```
 
 { ($.eventName = "StartInstances" || $.eventName = "StopInstances") && ($.responseElements.instancesSet.items[0].instanceId != "") }
 
 ```
+
+
+Refer to the following link for other example [Link](https://repost.aws/knowledge-center/cloudwatch-monitor-cloudtrail-events)
