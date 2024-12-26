@@ -38,9 +38,17 @@
 3. Create metric filters using the following pattern
 ```
 
-{ ($.eventName = "StartInstances" || $.eventName = "StopInstances") && ($.responseElements.instancesSet.items[0].instanceId != "") }
+{    $.eventName = "StartInstances" || $.eventName = "StopInstances"  }
 
 ```
+
+4. Provide metric namespace
+5. Provide metric name
+6. Give the metric value as 1
+7. Click on create
+8. Create cloudwatch alarm
+9. Select the SNS topic
+
 
 
 Refer to the following link for other example [Link](https://repost.aws/knowledge-center/cloudwatch-monitor-cloudtrail-events)
