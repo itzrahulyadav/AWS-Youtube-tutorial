@@ -1,5 +1,12 @@
 # Follow the steps to work on the project
 
+```mermaid
+graph TD
+    A[Users push code to GitHub repo] --> B[GitHub Actions triggered]
+    B --> C[S3 bucket gets synced]
+    C --> D[CloudFront distributes to users]
+```
+
 1. Create a Github repo
 2. Create a s3 bucket in AWS account
    ```
