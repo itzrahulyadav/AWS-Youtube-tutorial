@@ -43,6 +43,16 @@ jobs:
     steps:
       - name: Git clone the repository
         uses: actions/checkout@v4
+    #  - name: Set up Node.js
+    #    uses: actions/setup-node@v3
+    #    with:
+     #     node-version: '16' # Replace with the Node.js version used in your project
+
+ #     - name: Install dependencies
+     #   run: npm install
+
+    # - name: Build the project
+     #   run: npm run build
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502
         with:
