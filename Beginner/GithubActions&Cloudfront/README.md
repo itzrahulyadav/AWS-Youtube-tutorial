@@ -20,6 +20,7 @@ graph TD
     --default-root-object index.html
 
    ```
+- Create OAC to restrict access to s3 resources
 4. Create an index.html file in the github repo that will be used by distribution
 5. Authenticate github to AWS using OIDC provider.
 6. Go to AWS console and create a new identity
