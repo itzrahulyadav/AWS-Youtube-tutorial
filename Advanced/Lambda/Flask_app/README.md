@@ -54,11 +54,19 @@ EXPOSE 8080
 # Start the Flask app using Gunicorn with dynamic port
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
 ```
-# Create a ECR Repo
+
+# Install AWS CLI
 
 ```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
+```
+# Create a ECR Repo (optional)
 
+```bash
+aws ecr create-repository --repository-name my-repo
 ```
 
 # Create a lambda function
@@ -68,3 +76,4 @@ aws lambda create-function --function-name flask-lambda --package-type Image  --
 :latest --role <role_name>
 
 ```
+
