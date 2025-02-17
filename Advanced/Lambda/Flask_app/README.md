@@ -58,3 +58,11 @@ CMD ["flask", "run"]
 
 
 ```
+
+# Create a lambda function
+
+```
+aws lambda create-function --function-name flask-lambda --package-type Image  --code <uri>
+:latest --role <role_name>
+
+```
