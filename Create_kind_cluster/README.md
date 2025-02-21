@@ -58,3 +58,19 @@ kind get clusters
 kubectl cluster-info --context kind-<cluster_name>
 
 ```
+
+# Create a cluster with multiple nodes
+1. Create a config.yaml
+
+```
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+
+```
+
+2. kind create cluster --config config.yaml
+   
