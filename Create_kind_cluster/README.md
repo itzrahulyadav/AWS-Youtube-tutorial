@@ -47,3 +47,14 @@ mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$P
 
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
 ```
+
+# Step 6: Connect to the cluster
+
+```
+kind get clusters
+
+# connect to the specific cluster:
+
+kubectl cluster-info --context kind-<cluster_name>
+
+```
