@@ -1,0 +1,143 @@
+    1  sudo yum update -y
+    2  sudo amazon-linux-extras install epel -y 
+    3  sudo wget https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+    4  sudo rpm -ivh mysql80-community-release-el7-5.noarch.rpm
+    5  sudo yum install mysql-server -y
+    6  mysql --version
+    7  mysqld --version
+    8  sudo yum install mysql-server -y --skip-broken
+    9  mysqld --version
+   10  mysql --version
+   11  clear
+   12  sql --version
+   13  sudo systemctl start mysqld
+   14  sudo yum install mysql
+   15  mysql --version
+   16  sudo dnf install -y mysql-server
+   17  cler
+   18  clear
+   19  sudo dnf clean all
+   20  sudo dnf makecache
+   21  sudo dnf install -y mysql-server --skip-broken
+   22  mysql --version
+   23  sudo dnf config-manager --set-enabled extras
+   24  dnf list mysql*
+   25  dnf repolist
+   26  sudo dnf config-manager --set-enabled mysql80-community
+   27  dnf list mysql*
+   28  dnf repolist all | grep mysql
+   29  sudo dnf config-manager --enable mysql80-community
+   30  sudo dnf clean all
+   31  sudo dnf makecache
+   32  sudo dnf install -y mysql-community-server
+   33  mysql 
+   34  clear
+   35  sudo rpm -Uvh https://repo.mysql.com/mysql80-community-release-el9-1.noarch.rpm
+   36  sudo dnf install -y mysql-community-server
+   37  mysql
+   38  sudo systemctl enable --now mysqld
+   39  sudo dnf install -y mysql-community-server --nogpgcheck
+   40  mysql
+   41  sudo systemctl status mysql
+   42  mysql --version
+   43  sudo systemctl enable --now mysqld
+   44  systemctl status mysqld
+   45  sudo grep 'temporary password' /var/log/mysqld.log
+   46  sudo mysql_secure_installation
+   47  mysql -u root -p
+   48  ls
+   49  touch pwd.txt
+   50  echo "DUZwMSku)82F" > pwd.txt
+   51  ls
+   52  cat pwd.txt 
+   53  echo "mysql -u root -p"  >> pwd.txt
+   54  ls
+   55  cat pwd.txt
+   56  ls
+   57  mysql -u root -p
+   58  mysql -u root -p Apple@123
+   59  mysql -u root -p
+   60  history
+   61  history > commands.txt
+   62  vi db.txt
+   63  clear
+   64  ls
+   65  clear
+   66  rm -rf mysql80-community-release-el7-5.noarch.rpm 
+   67  ls
+   68  mysql -u root -p
+   69  ls
+   70  history
+[ec2-user@ip-172-31-38-42 ~]$ history > commands.txt
+[ec2-user@ip-172-31-38-42 ~]$ cat commands.txt
+    1  sudo yum update -y
+    2  sudo amazon-linux-extras install epel -y 
+    3  sudo wget https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+    4  sudo rpm -ivh mysql80-community-release-el7-5.noarch.rpm
+    5  sudo yum install mysql-server -y
+    6  mysql --version
+    7  mysqld --version
+    8  sudo yum install mysql-server -y --skip-broken
+    9  mysqld --version
+   10  mysql --version
+   11  clear
+   12  sql --version
+   13  sudo systemctl start mysqld
+   14  sudo yum install mysql
+   15  mysql --version
+   16  sudo dnf install -y mysql-server
+   17  cler
+   18  clear
+   19  sudo dnf clean all
+   20  sudo dnf makecache
+   21  sudo dnf install -y mysql-server --skip-broken
+   22  mysql --version
+   23  sudo dnf config-manager --set-enabled extras
+   24  dnf list mysql*
+   25  dnf repolist
+   26  sudo dnf config-manager --set-enabled mysql80-community
+   27  dnf list mysql*
+   28  dnf repolist all | grep mysql
+   29  sudo dnf config-manager --enable mysql80-community
+   30  sudo dnf clean all
+   31  sudo dnf makecache
+   32  sudo dnf install -y mysql-community-server
+   33  mysql 
+   34  clear
+   35  sudo rpm -Uvh https://repo.mysql.com/mysql80-community-release-el9-1.noarch.rpm
+   36  sudo dnf install -y mysql-community-server
+   37  mysql
+   38  sudo systemctl enable --now mysqld
+   39  sudo dnf install -y mysql-community-server --nogpgcheck
+   40  mysql
+   41  sudo systemctl status mysql
+   42  mysql --version
+   43  sudo systemctl enable --now mysqld
+   44  systemctl status mysqld
+   45  sudo grep 'temporary password' /var/log/mysqld.log
+   46  sudo mysql_secure_installation
+   47  mysql -u root -p
+   48  ls
+   49  touch pwd.txt
+   50  echo "DUZwMSku)82F" > pwd.txt
+   51  ls
+   52  cat pwd.txt 
+   53  echo "mysql -u root -p"  >> pwd.txt
+   54  ls
+   55  cat pwd.txt
+   56  ls
+   57  mysql -u root -p
+   58  mysql -u root -p Apple@123
+   59  mysql -u root -p
+   60  history
+   61  history > commands.txt
+   62  vi db.txt
+   63  clear
+   64  ls
+   65  clear
+   66  rm -rf mysql80-community-release-el7-5.noarch.rpm 
+   67  ls
+   68  mysql -u root -p
+   69  ls
+   70  history
+   71  history > commands.txt
