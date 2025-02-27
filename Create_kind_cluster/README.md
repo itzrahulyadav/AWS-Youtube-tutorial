@@ -73,4 +73,26 @@ nodes:
 ```
 
 2. kind create cluster --config config.yaml
+
+# create a service to expose pod
+
+```
+
+k expose pod <pod_name> --name my-service --port 80 --type NodePort --dry-run=client -o yaml > file.yaml
+
+```
+
+# Get the containers IP
+
+```
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mycluster-control-plane
+
+```
+
+# Map the Port to the EC2 Instance:
+
+```
+docker run --rm -d -p 32103:32103 alpine/socat TCP-LISTEN:32103,fork TCP:172.17.0.2:32103
+
+```
    
