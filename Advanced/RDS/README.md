@@ -64,6 +64,8 @@ CREATE TABLE users (
     email VARCHAR(255) UNIQUE NOT NULL
 );
 
+describe users
+
 ```
 
 15. Insert data into users table
