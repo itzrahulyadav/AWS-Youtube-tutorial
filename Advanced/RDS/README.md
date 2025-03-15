@@ -8,7 +8,7 @@ Docs: [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 3. Select free tier
 4. Give name to your RDS `Dev-DB`
 5. Select credentials to be self managed.
-6. Choose strong passwords `DBUser@123`
+6. Choose strong passwords `DBUser#123`
 7. For Connectivity choose `Connect to an EC2 Compute resource`
 8. Keep the other values as is
 9. Create a new VPC security group
@@ -85,3 +85,5 @@ INSERT INTO users (name, email) VALUES
 select * from users
 
 ```
+
+
