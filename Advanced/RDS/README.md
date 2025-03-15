@@ -36,14 +36,15 @@ mysql -h <endpoint> -P 3306 -u <username> -p
 ```sql
 
 CREATE DATABASE mydatabase; // for postgres
-mysql create database mydatabase // for sql
+create database mydatabase; // for sql
 
+show databases;
 ````
 
 13. use the database
 
 ```sql
- mysql USE mydatabase; // sqql
+USE mydatabase; // sqql
 \c mydatabase; // postgresql
 
 ```
@@ -52,7 +53,7 @@ mysql create database mydatabase // for sql
 
 ```sql
 
-mysql CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(255) NOT NULL,email VARCHAR(255) UNIQUE NOT NULL); // sql
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(255) NOT NULL,email VARCHAR(255) UNIQUE NOT NULL); // sql
 
 
 // for postgresql
